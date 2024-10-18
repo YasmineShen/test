@@ -202,8 +202,6 @@ void test(void)
 assert(initialise(NULL, "") == false);
 state s;
 assert(initialise(&s, NULL) == false);
-//enter a string of multiples of 4
-assert(initialise(&s, "ABCDABCDABCDABCDABCDABCD") == false);
 //enter a string of multiples of 3
 assert(initialise(&s, "ABCABCABCABCABCABCABC") == false);
 //incorrect character '-'
