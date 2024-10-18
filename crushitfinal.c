@@ -47,7 +47,7 @@ else {
     
     //check whether there are non-alphabetic symbols in the str
     for (int i = 0; i < length; i++) {
-        if (isalpha(str[i]) == false) {
+        if (isalpha(str[i]) == 0) {
             return false;
         }
     }
@@ -94,12 +94,11 @@ if (highestRow == -1) {
 //Step 2: builds a string, 
 //starting with the most significant line and skipping lines that are all '.
 int k = 0;
-for (int i = 0; i <= HEIGHT; i++) {
+for (int i = 0; i < HEIGHT; i++) {
     bool FullOfDots = true;
     for (int j = 0; j < WIDTH; j++) {
         if (s->board[i][j] != '.') {
             FullOfDots = false;
-            break;
         }
     }
 
