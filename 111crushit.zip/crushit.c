@@ -91,7 +91,7 @@ if (highestRow == -1) {
     return true;
 }
 
-//Step 2: Builds a string, 
+//Step 2: builds a string, 
 //starting with the most significant line and skipping lines that are all '.
 int k = 0;
 for (int i = 0; i <= MAXROWS; i++) {
@@ -105,7 +105,8 @@ for (int i = 0; i <= MAXROWS; i++) {
     if (FullOfDots == false) {
         for (int j = 0; j < WIDTH; j++) {
             //add the line character to the string
-            str[k++] = s->board[i][j];
+            str[k] = s->board[i][j];
+            k++;
         }
     }
 }

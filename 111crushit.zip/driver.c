@@ -1,6 +1,6 @@
 #include "crushit.h"
 #include "mydefs.h"
-#include "crushit.c"
+
 
 int main(void)
 {
